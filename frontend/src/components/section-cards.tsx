@@ -1,7 +1,7 @@
 "use client"
 
 import { TrendingDownIcon, TrendingUpIcon } from "lucide-react"
-
+import { format } from 'date-fns'
 import { Badge } from "@/components/ui/badge"
 import { TrendingUp } from "lucide-react"
 import { Label, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts"
@@ -19,6 +19,9 @@ import {
   CardTitle,
   CardContent,
 } from "@/components/ui/card"
+
+// time
+const formatted = format(new Date(), 'd MMMM yyyy');
 
 const chartData = [{ month: "january", desktop: 1260, mobile: 570 }]
 const chartConfig = {
@@ -42,7 +45,7 @@ export function SectionCards() {
       <Card className="flex flex-col">
         <CardHeader className="items-center pb-0">
           <CardTitle>Visitors Today</CardTitle>
-          <CardDescription>January - June 2024</CardDescription>
+          <CardDescription>{formatted}</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-1 items-center pb-0">
           <ChartContainer
