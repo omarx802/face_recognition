@@ -44,7 +44,7 @@ import {
   ChevronsRightIcon,
   ColumnsIcon,
   GripVerticalIcon,
-  LoaderIcon,
+  CircleX,
   MoreVerticalIcon,
   PlusIcon,
   TrendingUpIcon,
@@ -107,12 +107,10 @@ import {
 
 export const schema = z.object({
   id: z.number(),
-  header: z.string(),
-  type: z.string(),
+  event: z.string(),
+  timing: z.string(),
   status: z.string(),
-  target: z.string(),
-  limit: z.string(),
-  reviewer: z.string(),
+  person: z.string(),
 })
 
 // Create a separate component for the drag handle
@@ -168,20 +166,20 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "header",
-    header: "Header",
+    accessorKey: "event",
+    header: "Event",
     cell: ({ row }) => {
       return <TableCellViewer item={row.original} />
     },
     enableHiding: false,
   },
   {
-    accessorKey: "type",
+    accessorKey: "timing",
     header: "Timing",
     cell: ({ row }) => (
       <div className="w-32">
         <Badge variant="outline" className="px-1.5 text-muted-foreground">
-          {row.original.type}
+          {row.original.timing}
         </Badge>
       </div>
     ),
@@ -194,23 +192,23 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
         variant="outline"
         className="flex gap-1 px-1.5 text-muted-foreground [&_svg]:size-3"
       >
-        {row.original.status === "Done" ? (
+        {row.original.status === "Registered" ? (
           <CheckCircle2Icon className="text-green-500 dark:text-green-400" />
         ) : (
-          <LoaderIcon />
+          <CircleX  className="text-red-500 dark:text-red-400"/>
         )}
         {row.original.status}
       </Badge>
     ),
   },
   {
-    accessorKey: "reviewer",
-    header: "Reviewer",
+    accessorKey: "person",
+    header: "Person",
     cell: ({ row }) => {
-      const isAssigned = row.original.reviewer !== "Assign reviewer"
+      const isAssigned = row.original.person !== "Assign reviewer"
 
       if (isAssigned) {
-        return row.original.reviewer
+        return row.original.person
       }
 
       return (
@@ -253,7 +251,6 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
         <DropdownMenuContent align="end" className="w-32">
           <DropdownMenuItem>Edit</DropdownMenuItem>
           <DropdownMenuItem>Make a copy</DropdownMenuItem>
-          <DropdownMenuItem>Favorite</DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>Delete</DropdownMenuItem>
         </DropdownMenuContent>
@@ -433,7 +430,7 @@ export function DataTable({
           </DropdownMenu>
           <Button variant="outline" size="sm">
             <PlusIcon />
-            <span className="hidden lg:inline">Add Section</span>
+            <span className="hidden lg:inline">Add Event</span>
           </Button>
         </div>
       </div>
@@ -616,12 +613,12 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="link" className="w-fit px-0 text-left text-foreground">
-          {item.header}
+          {item.event}
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="flex flex-col">
         <SheetHeader className="gap-1">
-          <SheetTitle>{item.header}</SheetTitle>
+          <SheetTitle>{item.event}</SheetTitle>
           <SheetDescription>
             Showing total visitors for the last 6 months
           </SheetDescription>
@@ -686,13 +683,13 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
           )}
           <form className="flex flex-col gap-4">
             <div className="flex flex-col gap-3">
-              <Label htmlFor="header">Header</Label>
-              <Input id="header" defaultValue={item.header} />
+              <Label htmlFor="event">Event</Label>
+              <Input id="event" defaultValue={item.event} />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex flex-col gap-3">
-                <Label htmlFor="type">Type</Label>
-                <Select defaultValue={item.type}>
+                <Label htmlFor="type">Timing</Label>
+                <Select defaultValue={item.timing}>
                   <SelectTrigger id="type" className="w-full">
                     <SelectValue placeholder="Select a type" />
                   </SelectTrigger>
@@ -731,10 +728,10 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <Label htmlFor="reviewer">Reviewer</Label>
-              <Select defaultValue={item.reviewer}>
-                <SelectTrigger id="reviewer" className="w-full">
-                  <SelectValue placeholder="Select a reviewer" />
+              <Label htmlFor="person">Person</Label>
+              <Select defaultValue={item.person}>
+                <SelectTrigger id="person" className="w-full">
+                  <SelectValue placeholder="Select a person" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="Eddie Lake">Eddie Lake</SelectItem>

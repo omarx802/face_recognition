@@ -1,478 +1,478 @@
 [
   {
     "id": 1,
-    "header": "Cover page",
-    "type": "Cover page",
-    "status": "Not Started",
-    "reviewer": "Assign reviewer"
+    "event": "Cover page",
+    "timing": "Cover page",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 2,
-    "header": "Table of contents",
-    "type": "Table of contents",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Table of contents",
+    "timing": "Table of contents",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 3,
-    "header": "Executive summary",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Executive summary",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 4,
-    "header": "Technical approach",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Technical approach",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 5,
-    "header": "Design",
-    "type": "Narrative",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Design",
+    "timing": "Narrative",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 6,
-    "header": "Capabilities",
-    "type": "Narrative",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Capabilities",
+    "timing": "Narrative",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 7,
-    "header": "Integration with existing systems",
-    "type": "Narrative",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Integration with existing systems",
+    "timing": "Narrative",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 8,
-    "header": "Innovation and Advantages",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Innovation and Advantages",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 9,
-    "header": "Overview of EMR's Innovative Solutions",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Overview of EMR's Innovative Solutions",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 10,
-    "header": "Advanced Algorithms and Machine Learning",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Advanced Algorithms and Machine Learning",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 11,
-    "header": "Adaptive Communication Protocols",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Adaptive Communication Protocols",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 12,
-    "header": "Advantages Over Current Technologies",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Advantages Over Current Technologies",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 13,
-    "header": "Past Performance",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Past Performance",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 14,
-    "header": "Customer Feedback and Satisfaction Levels",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Customer Feedback and Satisfaction Levels",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 15,
-    "header": "Implementation Challenges and Solutions",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Implementation Challenges and Solutions",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 16,
-    "header": "Security Measures and Data Protection Policies",
-    "type": "Narrative",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Security Measures and Data Protection Policies",
+    "timing": "Narrative",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 17,
-    "header": "Scalability and Future Proofing",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Scalability and Future Proofing",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 18,
-    "header": "Cost-Benefit Analysis",
-    "type": "Plain language",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Cost-Benefit Analysis",
+    "timing": "Plain language",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 19,
-    "header": "User Training and Onboarding Experience",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "User Training and Onboarding Experience",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 20,
-    "header": "Future Development Roadmap",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Future Development Roadmap",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 21,
-    "header": "System Architecture Overview",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Maya Johnson"
+    "event": "System Architecture Overview",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Maya Johnson"
   },
   {
     "id": 22,
-    "header": "Risk Management Plan",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Carlos Rodriguez"
+    "event": "Risk Management Plan",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Carlos Rodriguez"
   },
   {
     "id": 23,
-    "header": "Compliance Documentation",
-    "type": "Legal",
-    "status": "In Process",
-    "reviewer": "Sarah Chen"
+    "event": "Compliance Documentation",
+    "timing": "Legal",
+    "status": "Unknown",
+    "person": "Sarah Chen"
   },
   {
     "id": 24,
-    "header": "API Documentation",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Raj Patel"
+    "event": "API Documentation",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Raj Patel"
   },
   {
     "id": 25,
-    "header": "User Interface Mockups",
-    "type": "Visual",
-    "status": "In Process",
-    "reviewer": "Leila Ahmadi"
+    "event": "User Interface Mockups",
+    "timing": "Visual",
+    "status": "Unknown",
+    "person": "Leila Ahmadi"
   },
   {
     "id": 26,
-    "header": "Database Schema",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Thomas Wilson"
+    "event": "Database Schema",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Thomas Wilson"
   },
   {
     "id": 27,
-    "header": "Testing Methodology",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Testing Methodology",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 28,
-    "header": "Deployment Strategy",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Deployment Strategy",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 29,
-    "header": "Budget Breakdown",
-    "type": "Financial",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Budget Breakdown",
+    "timing": "Financial",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 30,
-    "header": "Market Analysis",
-    "type": "Research",
-    "status": "Done",
-    "reviewer": "Sophia Martinez"
+    "event": "Market Analysis",
+    "timing": "Research",
+    "status": "Registered",
+    "person": "Sophia Martinez"
   },
   {
     "id": 31,
-    "header": "Competitor Comparison",
-    "type": "Research",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Competitor Comparison",
+    "timing": "Research",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 32,
-    "header": "Maintenance Plan",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Alex Thompson"
+    "event": "Maintenance Plan",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Alex Thompson"
   },
   {
     "id": 33,
-    "header": "User Personas",
-    "type": "Research",
-    "status": "In Process",
-    "reviewer": "Nina Patel"
+    "event": "User Personas",
+    "timing": "Research",
+    "status": "Unknown",
+    "person": "Nina Patel"
   },
   {
     "id": 34,
-    "header": "Accessibility Compliance",
-    "type": "Legal",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Accessibility Compliance",
+    "timing": "Legal",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 35,
-    "header": "Performance Metrics",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "David Kim"
+    "event": "Performance Metrics",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "David Kim"
   },
   {
     "id": 36,
-    "header": "Disaster Recovery Plan",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Disaster Recovery Plan",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 37,
-    "header": "Third-party Integrations",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Eddie Lake"
+    "event": "Third-party Integrations",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Eddie Lake"
   },
   {
     "id": 38,
-    "header": "User Feedback Summary",
-    "type": "Research",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "User Feedback Summary",
+    "timing": "Research",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 39,
-    "header": "Localization Strategy",
-    "type": "Narrative",
-    "status": "In Process",
-    "reviewer": "Maria Garcia"
+    "event": "Localization Strategy",
+    "timing": "Narrative",
+    "status": "Unknown",
+    "person": "Maria Garcia"
   },
   {
     "id": 40,
-    "header": "Mobile Compatibility",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "James Wilson"
+    "event": "Mobile Compatibility",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "James Wilson"
   },
   {
     "id": 41,
-    "header": "Data Migration Plan",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Data Migration Plan",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 42,
-    "header": "Quality Assurance Protocols",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Priya Singh"
+    "event": "Quality Assurance Protocols",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Priya Singh"
   },
   {
     "id": 43,
-    "header": "Stakeholder Analysis",
-    "type": "Research",
-    "status": "In Process",
-    "reviewer": "Eddie Lake"
+    "event": "Stakeholder Analysis",
+    "timing": "Research",
+    "status": "Unknown",
+    "person": "Eddie Lake"
   },
   {
     "id": 44,
-    "header": "Environmental Impact Assessment",
-    "type": "Research",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Environmental Impact Assessment",
+    "timing": "Research",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 45,
-    "header": "Intellectual Property Rights",
-    "type": "Legal",
-    "status": "In Process",
-    "reviewer": "Sarah Johnson"
+    "event": "Intellectual Property Rights",
+    "timing": "Legal",
+    "status": "Unknown",
+    "person": "Sarah Johnson"
   },
   {
     "id": 46,
-    "header": "Customer Support Framework",
-    "type": "Narrative",
-    "status": "Done",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Customer Support Framework",
+    "timing": "Narrative",
+    "status": "Registered",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 47,
-    "header": "Version Control Strategy",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Version Control Strategy",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 48,
-    "header": "Continuous Integration Pipeline",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Michael Chen"
+    "event": "Continuous Integration Pipeline",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Michael Chen"
   },
   {
     "id": 49,
-    "header": "Regulatory Compliance",
-    "type": "Legal",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Regulatory Compliance",
+    "timing": "Legal",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 50,
-    "header": "User Authentication System",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "User Authentication System",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 51,
-    "header": "Data Analytics Framework",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Data Analytics Framework",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 52,
-    "header": "Cloud Infrastructure",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Cloud Infrastructure",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 53,
-    "header": "Network Security Measures",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Lisa Wong"
+    "event": "Network Security Measures",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Lisa Wong"
   },
   {
     "id": 54,
-    "header": "Project Timeline",
-    "type": "Planning",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Project Timeline",
+    "timing": "Planning",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 55,
-    "header": "Resource Allocation",
-    "type": "Planning",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Resource Allocation",
+    "timing": "Planning",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 56,
-    "header": "Team Structure and Roles",
-    "type": "Planning",
-    "status": "Done",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Team Structure and Roles",
+    "timing": "Planning",
+    "status": "Registered",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 57,
-    "header": "Communication Protocols",
-    "type": "Planning",
-    "status": "In Process",
-    "reviewer": "Assign reviewer"
+    "event": "Communication Protocols",
+    "timing": "Planning",
+    "status": "Unknown",
+    "person": "Assign reviewer"
   },
   {
     "id": 58,
-    "header": "Success Metrics",
-    "type": "Planning",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Success Metrics",
+    "timing": "Planning",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 59,
-    "header": "Internationalization Support",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Internationalization Support",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 60,
-    "header": "Backup and Recovery Procedures",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Backup and Recovery Procedures",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 61,
-    "header": "Monitoring and Alerting System",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Daniel Park"
+    "event": "Monitoring and Alerting System",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Daniel Park"
   },
   {
     "id": 62,
-    "header": "Code Review Guidelines",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Code Review Guidelines",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 63,
-    "header": "Documentation Standards",
-    "type": "Technical content",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Documentation Standards",
+    "timing": "Technical content",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 64,
-    "header": "Release Management Process",
-    "type": "Planning",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Release Management Process",
+    "timing": "Planning",
+    "status": "Registered",
+    "person": "Assign reviewer"
   },
   {
     "id": 65,
-    "header": "Feature Prioritization Matrix",
-    "type": "Planning",
-    "status": "In Process",
-    "reviewer": "Emma Davis"
+    "event": "Feature Prioritization Matrix",
+    "timing": "Planning",
+    "status": "Unknown",
+    "person": "Emma Davis"
   },
   {
     "id": 66,
-    "header": "Technical Debt Assessment",
-    "type": "Technical content",
-    "status": "Done",
-    "reviewer": "Eddie Lake"
+    "event": "Technical Debt Assessment",
+    "timing": "Technical content",
+    "status": "Registered",
+    "person": "Eddie Lake"
   },
   {
     "id": 67,
-    "header": "Capacity Planning",
-    "type": "Planning",
-    "status": "In Process",
-    "reviewer": "Jamik Tashpulatov"
+    "event": "Capacity Planning",
+    "timing": "Planning",
+    "status": "Unknown",
+    "person": "Jamik Tashpulatov"
   },
   {
     "id": 68,
-    "header": "Service Level Agreements",
-    "type": "Legal",
-    "status": "Done",
-    "reviewer": "Assign reviewer"
+    "event": "Service Level Agreements",
+    "timing": "Legal",
+    "status": "Registered",
+    "person": "Assign reviewer"
   }
 ]
