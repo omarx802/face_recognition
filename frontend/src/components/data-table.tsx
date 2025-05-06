@@ -205,7 +205,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     accessorKey: "person",
     header: "Person",
     cell: ({ row }) => {
-      const isAssigned = row.original.person !== "Assign reviewer"
+      const isAssigned = row.original.person !== "unknown"
 
       if (isAssigned) {
         return row.original.person
@@ -213,23 +213,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
 
       return (
         <>
-          <Label htmlFor={`${row.original.id}-reviewer`} className="sr-only">
-            Reviewer
-          </Label>
-          <Select>
-            <SelectTrigger
-              className="h-8 w-40"
-              id={`${row.original.id}-reviewer`}
-            >
-              <SelectValue placeholder="Assign reviewer" />
-            </SelectTrigger>
-            <SelectContent align="end">
-              <SelectItem value="Eddie Lake">Eddie Lake</SelectItem>
-              <SelectItem value="Jamik Tashpulatov">
-                Jamik Tashpulatov
-              </SelectItem>
-            </SelectContent>
-          </Select>
+          --
         </>
       )
     },
@@ -250,7 +234,6 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-32">
           <DropdownMenuItem>Edit</DropdownMenuItem>
-          <DropdownMenuItem>Make a copy</DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>Delete</DropdownMenuItem>
         </DropdownMenuContent>

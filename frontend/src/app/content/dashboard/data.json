@@ -4,7 +4,7 @@
     "event": "Cover page",
     "timing": "Cover page",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 2,
@@ -53,91 +53,91 @@
     "event": "Innovation and Advantages",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 9,
     "event": "Overview of EMR's Innovative Solutions",
     "timing": "Technical content",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 10,
     "event": "Advanced Algorithms and Machine Learning",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 11,
     "event": "Adaptive Communication Protocols",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 12,
     "event": "Advantages Over Current Technologies",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 13,
     "event": "Past Performance",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 14,
     "event": "Customer Feedback and Satisfaction Levels",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 15,
     "event": "Implementation Challenges and Solutions",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 16,
     "event": "Security Measures and Data Protection Policies",
     "timing": "Narrative",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 17,
     "event": "Scalability and Future Proofing",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 18,
     "event": "Cost-Benefit Analysis",
     "timing": "Plain language",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 19,
     "event": "User Training and Onboarding Experience",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 20,
     "event": "Future Development Roadmap",
     "timing": "Narrative",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "event": "Testing Methodology",
     "timing": "Technical content",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 28,
@@ -214,7 +214,7 @@
     "event": "Competitor Comparison",
     "timing": "Research",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 32,
@@ -235,7 +235,7 @@
     "event": "Accessibility Compliance",
     "timing": "Legal",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 35,
@@ -263,7 +263,7 @@
     "event": "User Feedback Summary",
     "timing": "Research",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 39,
@@ -284,7 +284,7 @@
     "event": "Data Migration Plan",
     "timing": "Technical content",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 42,
@@ -305,7 +305,7 @@
     "event": "Environmental Impact Assessment",
     "timing": "Research",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 45,
@@ -326,7 +326,7 @@
     "event": "Version Control Strategy",
     "timing": "Technical content",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 48,
@@ -340,7 +340,7 @@
     "event": "Regulatory Compliance",
     "timing": "Legal",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 50,
@@ -361,7 +361,7 @@
     "event": "Cloud Infrastructure",
     "timing": "Technical content",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 53,
@@ -382,7 +382,7 @@
     "event": "Resource Allocation",
     "timing": "Planning",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 56,
@@ -396,7 +396,7 @@
     "event": "Communication Protocols",
     "timing": "Planning",
     "status": "Unknown",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 58,
@@ -417,7 +417,7 @@
     "event": "Backup and Recovery Procedures",
     "timing": "Technical content",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 61,
@@ -445,7 +445,7 @@
     "event": "Release Management Process",
     "timing": "Planning",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   },
   {
     "id": 65,
@@ -473,6 +473,6 @@
     "event": "Service Level Agreements",
     "timing": "Legal",
     "status": "Registered",
-    "person": "Assign reviewer"
+    "person": "unknown"
   }
 ]
