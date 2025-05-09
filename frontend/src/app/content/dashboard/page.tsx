@@ -16,13 +16,19 @@ import { Search } from "@/components/search"
 import { ModeToggle } from "@/components/mode-toggle"
 import { DataTable } from "@/components/data-table"
 import { SectionCards } from "@/components/section-cards"
-import TeamSwitcher from "@/components/team-switcher"
+import UserProfileMenu from "@/components/user-nav"
 
 import data from "./data.json"
 
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Dashboard of Face Recognition Project",
+}
+
+const user = {
+  name: "Alicia Koch",
+  email: "alicia@example.com",
+  avatar: "https://avatar.vercel.sh/alicia.png",
 }
 
 
@@ -48,7 +54,7 @@ export default function DashboardPage() {
       <div className="hidden flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            <TeamSwitcher />
+            <UserProfileMenu user={user}/>
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />

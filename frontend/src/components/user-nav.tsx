@@ -1,93 +1,96 @@
 "use client"
 
-import {
-    BellIcon,
-    LogOutIcon,
-    MoreVerticalIcon,
-    UserCircleIcon,
-  } from "lucide-react"
-  
-  import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
-  } from "@/components/ui/avatar"
-  import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuGroup,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+import * as React from "react"
+import { ChevronsUpDown, LogOut, Settings, User as UserIcon } from "lucide-react"
 
-export function UserNav({
-    user,
-  }: {
-    user: {
-      name: string
-      email: string
-      avatar: string
+import { cn } from "@/lib/utils"
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  Command,
+  CommandGroup,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command"
+import { Separator } from "@/components/ui/separator"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+
+type User = {
+  name: string
+  email: string
+  avatar: string
+}
+
+export default function UserProfileMenu({
+  className,
+  user,
+}: {
+  className?: string
+  user: User
+}) {
+  const [open, setOpen] = React.useState(false)
+
+  const handleSelect = (item: string) => {
+    setOpen(false)
+    switch (item) {
+      case "account":
+        console.log("Go to account")
+        break
+      case "settings":
+        console.log("Go to settings")
+        break
+      case "logout":
+        console.log("Logging out")
+        break
     }
-  }) {
+  }
+
   return (
-    <DropdownMenu>
-    <DropdownMenuTrigger asChild>
-      <SidebarMenuButton
-        size="lg"
-        className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
-      >
-        <Avatar className="h-8 w-8 rounded-lg grayscale">
-          <AvatarImage src={user.avatar} alt={user.name} />
-          <AvatarFallback className="rounded-lg">CN</AvatarFallback>
-        </Avatar>
-        <div className="grid flex-1 text-left text-sm leading-tight">
-          <span className="truncate font-medium">{user.name}</span>
-          <span className="truncate text-xs text-muted-foreground">
-            {user.email}
-          </span>
-        </div>
-        <MoreVerticalIcon className="ml-auto size-4" />
-      </SidebarMenuButton>
-    </DropdownMenuTrigger>
-    <DropdownMenuContent
-      className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg"
-      side={isMobile ? "bottom" : "right"}
-      align="end"
-      sideOffset={4}
-    >
-      <DropdownMenuLabel className="p-0 font-normal">
-        <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-          <Avatar className="h-8 w-8 rounded-lg">
-            <AvatarImage src={user.avatar} alt={user.name} />
-            <AvatarFallback className="rounded-lg">CN</AvatarFallback>
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className={cn("w-[200px] justify-between", className)}
+        >
+          <Avatar className="mr-2 h-5 w-5">
+            <AvatarImage src={user.avatar} alt={user.name} className="grayscale" />
+            <AvatarFallback>{user.name[0]}</AvatarFallback>
           </Avatar>
-          <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-medium">{user.name}</span>
-            <span className="truncate text-xs text-muted-foreground">
-              {user.email}
-            </span>
-          </div>
-        </div>
-      </DropdownMenuLabel>
-      <DropdownMenuSeparator />
-      <DropdownMenuGroup>
-        <DropdownMenuItem>
-          <UserCircleIcon />
-          Account
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <BellIcon />
-          Notifications
-        </DropdownMenuItem>
-      </DropdownMenuGroup>
-      <DropdownMenuSeparator />
-      <DropdownMenuItem>
-        <LogOutIcon />
-        Log out
-      </DropdownMenuItem>
-    </DropdownMenuContent>
-  </DropdownMenu>
+          {user.name}
+          <ChevronsUpDown className="ml-auto opacity-50 h-4 w-4" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-[200px] p-0">
+        <Command>
+          <CommandList>
+            <CommandGroup>
+              <CommandItem onSelect={() => handleSelect("account")}>
+                <UserIcon className="mr-2 h-4 w-4" />
+                Account
+              </CommandItem>
+              <CommandItem onSelect={() => handleSelect("settings")}>
+                <Settings className="mr-2 h-4 w-4" />
+                Settings
+              </CommandItem>
+              <Separator />
+              <CommandItem onSelect={() => handleSelect("logout")}>
+                <LogOut className="mr-2 h-4 w-4" />
+                Log Out
+              </CommandItem>
+            </CommandGroup>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
   )
 }
