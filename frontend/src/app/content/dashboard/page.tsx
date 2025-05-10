@@ -18,7 +18,7 @@ import { DataTable } from "@/components/data-table"
 import { SectionCards } from "@/components/section-cards"
 import UserProfileMenu from "@/components/user-nav"
 
-import data from "./data.json"
+import data from "../../../../public/data.json"
 
 export const metadata: Metadata = {
   title: "Dashboard",
