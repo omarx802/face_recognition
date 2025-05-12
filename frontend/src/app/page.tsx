@@ -1,6 +1,5 @@
 
 import { Badge } from "@/components/ui/badge"
-import { Metadata } from "next"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
@@ -9,7 +8,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { CalendarDateRangePicker } from "@/components/data-range-picker"
 import { MainNav } from "@/components/main-nav"
 import { ChartAreaInteractive } from "@/components/chart-area-interactive"
 import { Search } from "@/components/search"
@@ -17,13 +15,9 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { DataTable } from "@/components/data-table"
 import { SectionCards } from "@/components/section-cards"
 import UserProfileMenu from "@/components/user-nav"
-
+import { DemoShareDocument, DemoTeamMembers } from "@/components/mehdy"
 import data from "../../public/data.json"
 
-export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Dashboard of Face Recognition Project",
-}
 
 const user = {
   name: "Alicia Koch",
@@ -66,7 +60,7 @@ export default function DashboardPage() {
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
-              <CalendarDateRangePicker />
+
               <Button>Download</Button>
             </div>
           </div>
@@ -112,7 +106,16 @@ export default function DashboardPage() {
             </TabsContent>
 
             <TabsContent value="registered" className="space-y-4">
-              ---mehdy
+              <div className="flex flex-1 flex-col">
+                <div className="@container/main flex flex-1 flex-col gap-2">
+                  <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
+                      <DemoTeamMembers />
+                      <DemoShareDocument />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </TabsContent>
 
             <TabsContent value="analytics" className="space-y-4">
