@@ -28,7 +28,7 @@ export function SectionCards() {
       .then((res) => res.json())
       .then((data: RecognitionEntry[]) => {
         const total = data.length;
-        const unknown = data.filter((entry) => entry.person === 'unknown').length;
+        const unknown = data.filter((entry) => entry.person === 'Unknown').length;
         const known = total - unknown;
 
         setTotal(total);

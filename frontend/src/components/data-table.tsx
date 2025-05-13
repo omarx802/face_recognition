@@ -185,7 +185,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     accessorKey: "person",
     header: "Person",
     cell: ({ row }) => {
-      const isAssigned = row.original.person !== "unknown"
+      const isAssigned = row.original.person !== "Unknown"
 
       if (isAssigned) {
         return row.original.person

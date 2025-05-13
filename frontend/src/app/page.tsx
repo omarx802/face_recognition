@@ -20,8 +20,8 @@ import data from "../../public/data.json"
 
 
 const user = {
-  name: "Alicia Koch",
-  email: "alicia@example.com",
+  name: "Admin",
+  email: "admin@admin.com",
   avatar: "https://avatar.vercel.sh/alicia.png",
 }
 
@@ -61,7 +61,10 @@ export default function DashboardPage() {
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
 
-              <Button>Download</Button>
+              <a href="/data.json" download>
+                <Button>Download</Button>
+              </a>
+              
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
@@ -87,9 +90,6 @@ export default function DashboardPage() {
                 >
                   1
                 </Badge>
-              </TabsTrigger>
-              <TabsTrigger value="notifications" className="gap-1" disabled>
-                Notifications
               </TabsTrigger>
 
             </TabsList>
